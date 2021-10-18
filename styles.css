@@ -1,3 +1,9 @@
+* {
+  margin:0;
+  border:0;
+  padding:0;	
+}
+
 :root {
   --primary-color: #6003C3;
   --white: #FFFFFF;
@@ -10,5 +16,66 @@ body {
   font-family: 'Bebas Neue', Impact, sans-serif;
 }
 
+header {
+  padding: 125px;
+  background-color: #6003C3;
+  text-align: center;
+}
 
-***
+h1 {
+  font-size: 56px;
+  color: white;
+}
+
+p {
+  font-size: 28px;
+  color:#6003C3;
+  text-align: center;
+}
+
+.boxes {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 33.33%;
+  font-size: 84px;
+  text-align: center;
+  color: #6003C3;
+}
+
+#box-1 {
+  background-color: #FCFF00;
+  width: 300px;
+  height: 300px;
+  border: 15px solid #6003C3;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 5);
+  margin: 20px;
+}
+
+#box-2 {
+  background-color: #57FFC9;
+  width: 300px;
+  height: 300px;
+  border: 15px solid #6003C3;
+  box-shadow: 0 3px 15px rgb(0 0 0 / 5);
+  margin: 20px;
+}
+
+#box-3 {
+  background-color: #A5FF01;
+  width: 300px;
+  height: 300px;
+  border: 15px solid #6003C3;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 5);
+  margin: 20px;
+}
+
+@media (min-width: 320px) {
+
+  .boxes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+}
