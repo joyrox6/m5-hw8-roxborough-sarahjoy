@@ -4,13 +4,19 @@ var losses;
 losses = ["Try again next time", "Sorry, you didn't win", "Oops, better luck next turn"];
 console.log(losses);
 
-
-
 // Create variables to count wins and losses
+var losses = i;
+...
 
 // Create variables that target elements with the following IDs: 'message', 'wins', 'losses'
+var message;
+
+var wins;
+
+var losses;
 
 // target all .box elements and attach a click event listener to each one using a loop
+
 
 // within each click event...
 // determine which box was clicked with 'this.textContent' or event.target.textContent
