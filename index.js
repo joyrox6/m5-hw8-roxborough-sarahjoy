@@ -1,4 +1,10 @@
 // Create an Array of at least 3 losing messages
+var losses;
+
+losses = ["Try again next time", "Sorry, you didn't win", "Oops, better luck next turn"];
+console.log(losses);
+
+
 
 // Create variables to count wins and losses
 
