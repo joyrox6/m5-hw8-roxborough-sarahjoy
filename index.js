@@ -16,11 +16,14 @@ var wins;
 var losses;
 
 // target all .box elements and attach a click event listener to each one using a loop
-
+document.querySelector('box-1').addEventListener("click", function() {alert("Enter number "); });
 
 // within each click event...
 // determine which box was clicked with 'this.textContent' or event.target.textContent
+
+
 // convert that value to a Number and store it to a variable
+
 
 // create a random number between 1-3 and store it to a variable
 // This number will represent the winning box
