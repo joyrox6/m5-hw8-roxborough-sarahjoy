@@ -45,7 +45,7 @@ number = 3;
 // determine if the box clicked is equal to the random number
 // if the numbers match, display a winning message by changing the text content of the div#message element
 // if the numbers match, increment wins and display the win count in div#wins
-if (number = 3) {
+if (boxElement = number) {
     wins = true;
 } else {
     wins = false; 
@@ -55,7 +55,7 @@ console.log("You've won!" + (wins + 1))
 
 // if the numbers don't match, change the div#message element's text to a random losing message from the array above
 // if the numbers don't match, increment losses and display the loss count in div#losses
-if (number != 3) {
+if (boxElement != number) {
     losses = true;
 } else {
     losses = false; 
