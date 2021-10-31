@@ -1,21 +1,20 @@
 // Create an Array of at least 3 losing messages
-var p = lose;
+var messages = [
 
-lose = ["Try again next time", "Sorry, you didn't win", "Oops, better luck next turn"];
-console.log(lose);
+'Try again next time',
+'Sorry, you lost', 
+'Oops, better luck next turn'
+
+]
 
 // Create variables to count wins and losses
-let count = losses;
-let count = wins;
-
-console.log(count);
+var wins = 0
+var losses = 0
 
 // Create variables that target elements with the following IDs: 'message', 'wins', 'losses'
-var message;
-
-var wins;
-
-var losses;
+var messageEl = document.getElementById('message')
+var winsEl = document.getElementById('wins')
+var lossesEl = document.getElementById('losses')
 
 // target all .box elements and attach a click event listener to each one using a loop
 document.querySelector('box-1').addEventListener("click", function() {alert("Enter number "); });
