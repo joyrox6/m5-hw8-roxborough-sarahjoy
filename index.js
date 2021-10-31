@@ -17,15 +17,25 @@ var winsEl = document.getElementById('wins')
 var lossesEl = document.getElementById('losses')
 
 // target all .box elements and attach a click event listener to each one using a loop
-document.querySelector('box-1').addEventListener("click", function() {alert("Enter number "); });
-document.querySelector('box-2').addEventListener("click", function() {alert("Enter number "); });
-document.querySelector('box-3').addEventListener("click", function() {alert("Enter number "); });
+var boxElements = document.querySelectorAll('.box')
+// console.log(boxElements)
 
-// within each click event...
-// determine which box was clicked with 'this.textContent' or event.target.textContent
-// convert that value to a Number and store it to a variable
-this.textContent = event.target.textContent
-
+for (var i = 0; i < boxElements.length; i++) {
+    // 0, 1, 2
+    var boxElement = boxElements[i];
+    // console.log(boxElements[i])
+    console.log(boxElement)
+    boxElement.onclick = function(event) {
+        // within each click event...
+        // determine which box was clicked with 'this.textContent' or event.target.textContent
+        // convert that value to a number and store it to a variable
+        var numWasClicked = Number(event.target.textContent)
+        //console.log(typeof boxNumWasClicked, boxNumWasClicked)
+        //console.log(typeof parseInt(boxNumWasClicked, 10), parseInt(boxNumWasClicked, 10))
+        //console.log(parseInt(boxNumWasClicked, 10))
+        //console.log(Number(boxNumWasClicked))
+    }
+}
 
 // create a random number between 1-3 and store it to a variable
 // This number will represent the winning box
@@ -50,4 +60,4 @@ if (x != 3) {
     losses = false; 
 }
 
-console.log(lose + (losses + 1))
+console.log(messageEl + (losses + 1))
