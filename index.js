@@ -39,7 +39,8 @@ for (var i = 0; i < boxElements.length; i++) {
 
 // create a random number between 1-3 and store it to a variable
 // This number will represent the winning box
-var x = 3;
+var number;
+number = 3;
 
 // determine if the box clicked is equal to the random number
 // if the numbers match, display a winning message by changing the text content of the div#message element
