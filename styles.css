@@ -72,9 +72,16 @@ p {
 
 @media (min-width: 320px) {
 
+  h1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
   .boxes {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
   }
 
